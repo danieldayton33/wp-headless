@@ -1,0 +1,12 @@
+# System Files
+.DS_Store
+
+# WordPress Files
+wp-content/themes/*
+!wp-content/themes/carimus-headless
+wp-content/plugins/*
+!wp-content/plugins/wpe-headless
+!wp-content/plugins/advanced-custom-fields-pro
+
+composer.lock
+vendor

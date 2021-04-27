@@ -1,0 +1,31 @@
+{
+    "name": "carimus/carimus-headless-theme",
+    "description": "The WP Theme/backend for new headless Carimus website",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Carimus",
+            "email": "digital-security@carimus.com"
+        }
+    ],
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org",
+            "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+        }
+    ],
+    "require": {
+        "wpackagist-plugin/wordpress-seo":"*",
+        "wpackagist-plugin/wp-mail-smtp":"*",
+        "wpackagist-plugin/wp-graphql":"*",
+        "wp-graphql/wp-graphql-acf":"^0.5.1"
+    },
+    "extra": {
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+        }
+    },
+    "scripts": {}
+}
