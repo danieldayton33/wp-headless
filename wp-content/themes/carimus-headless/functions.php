@@ -1,4 +1,9 @@
 <?php
+
+add_action( 'init', function() {
+    register_nav_menu('main-nav',__( 'Main Nav' ));
+});
+
 // TODO: Register custom post types
 
 add_action('init', function() {
