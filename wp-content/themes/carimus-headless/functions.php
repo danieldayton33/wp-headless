@@ -1,5 +1,11 @@
 <?php
 
+function carimus_setup_headless_theme() {
+    add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'carimus_setup_headless_theme');
+
+
 add_action( 'init', function() {
     register_nav_menu('main-nav',__( 'Main Nav' ));
 });
