@@ -17,6 +17,7 @@
         }
     ],
     "require": {
+        "wpackagist-plugin/add-wpgraphql-seo":"*",
         "wpackagist-plugin/wordpress-seo":"*",
         "wpackagist-plugin/wp-mail-smtp":"*",
         "wpackagist-plugin/wp-graphql":"*",
