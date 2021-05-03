@@ -262,6 +262,21 @@ if (function_exists('acf_add_local_field_group')):
 				            'delay' => 0,
 			            ),
 			            array(
+				            'key' => 'field_5ds4e681s6871685',
+				            'label' => 'Content Link',
+				            'name' => 'content_link',
+				            'type' => 'link',
+				            'instructions' => '',
+				            'required' => 0,
+				            'conditional_logic' => 0,
+				            'wrapper' => array(
+					            'width' => '',
+					            'class' => '',
+					            'id' => '',
+				            ),
+				            'return_format' => 'array',
+			            ),
+			            array(
 				            'key' => 'field_6006d3c4c5e97',
 				            'label' => 'Slide Link',
 				            'name' => 'slide_link',
