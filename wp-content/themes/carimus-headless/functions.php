@@ -10,6 +10,7 @@ add_action( 'init', function() {
     register_nav_menu('main-nav',__( 'Main Nav' ));
 });
 
+require_once(__DIR__ . '/inc/custom-fields.php');
 // Register Custom Post Types
 add_action('init', function() {
     $labels = [
