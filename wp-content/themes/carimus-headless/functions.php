@@ -11,28 +11,7 @@ add_action( 'init', function() {
 });
 
 // Register Custom Post Types
-add_action('init', function() {
-    $labels = [
-        'name' => __( 'News' ),
-        'singular_name' => __( 'News' ),
-    ];
-
-    $args = [
-        'label' => __( 'News' ),
-        'labels' => $labels,
-        'description' => '',
-        'public' => true,
-        'show_in_graphql' => true,
-        'graphql_single_name' => 'news_s',
-        'graphql_plural_name' => 'news',
-        'supports' => [ 'title', 'editor', 'thumbnail', 'excerpt' ],
-        'taxonomies' => [ 'category' ],
-        'menu_icon' => 'dashicons-megaphone',
-    ];
-
-    register_post_type( 'news', $args );
-});
-
+require_once(__DIR__ . '/custom-post-types.php');
 add_action('init', function() {
     if( function_exists('acf_add_options_page') ) {
         acf_add_options_page(array(
@@ -46,3 +25,4 @@ add_action('init', function() {
         ));
     }
 });
+
