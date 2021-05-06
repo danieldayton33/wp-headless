@@ -227,11 +227,11 @@
                             "ui_off_text": ""
                         },
                         {
-                            "key": "field_60910b3ae1dd0",
-                            "label": "Section Link",
-                            "name": "section_link",
-                            "type": "link",
-                            "instructions": "",
+                            "key": "field_6092f530acd7e",
+                            "label": "Link Button Instead",
+                            "name": "link_button_instead",
+                            "type": "true_false",
+                            "instructions": "Toggle to switch from normal button to a link button",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -240,7 +240,11 @@
                                 "id": ""
                             },
                             "show_in_graphql": 1,
-                            "return_format": "array"
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
                         },
                         {
                             "key": "field_60910b8be1dd1",
@@ -281,6 +285,175 @@
                                     "toolbar": "full",
                                     "media_upload": 1,
                                     "delay": 0
+                                },
+                                {
+                                    "key": "field_6092f4abead39",
+                                    "label": "Section Link",
+                                    "name": "section_link",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "show_in_graphql": 1,
+                                    "return_format": "array"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60929c689cb9a": {
+                    "key": "layout_60929c689cb9a",
+                    "name": "ValuesCards",
+                    "label": "Values Cards",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_60929c689cb9b",
+                            "label": "Section Title",
+                            "name": "section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_60929c689cb9c",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": ""
+                        },
+                        {
+                            "key": "field_60929c689cb9d",
+                            "label": "Dark Background",
+                            "name": "text_light",
+                            "type": "true_false",
+                            "instructions": "Toggle to make the font white for the section",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_60929c689cb9f",
+                            "label": "Values Cards",
+                            "name": "values_cards",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "row",
+                            "button_label": "Add Card",
+                            "sub_fields": [
+                                {
+                                    "key": "field_60929c689cba0",
+                                    "label": "Value Title",
+                                    "name": "value_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "show_in_graphql": 1,
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_60929d6c9cba1",
+                                    "label": "Value Summary",
+                                    "name": "value_summary",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "show_in_graphql": 1,
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": ""
+                                },
+                                {
+                                    "key": "field_60929d7e9cba2",
+                                    "label": "Background Image",
+                                    "name": "background_image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "show_in_graphql": 1,
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
                                 }
                             ]
                         }
@@ -462,5 +635,5 @@
     "graphql_field_name": "pageSections",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1620119893
+    "modified": 1620319379
 }
