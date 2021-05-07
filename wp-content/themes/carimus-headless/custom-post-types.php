@@ -80,8 +80,49 @@ function register_crew_post_type() {
 	register_post_type( "crew", $args );
 }
 
+/**
+ * Post Type: Crew.
+ */
+function register_work_post_type() {
+	$labels = [
+		"name" => __( "Work", "carimus" ),
+		"singular_name" => __( "Work", "carimus" ),
+	];
 
-add_action( 'init', 'register_crew_post_type' );
+	$args = [
+		"label" => __( "Work", "carimus" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		'all_items'             => __( 'All Work', 'carimus' ),
+		'add_new_item'          => __( 'Add New Work', 'carimus' ),
+		'add_new'               => __( 'Add New Work', 'carimus' ),
+		'new_item'              => __( 'New Work', 'carimus' ),
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"menu_icon" => "dashicons-hammer",
+		"query_var" => true,
+		"supports" => [ "title", "thumbnail" ],
+		'show_in_graphql' => true,
+		'graphql_single_name' => 'work',
+		'graphql_plural_name' => 'works',
+	];
+
+	register_post_type( "work", $args );
+}
+
+add_action( 'init', 'register_work_post_type' );
 
 add_action('init', function() {
 	$labels = [
@@ -101,6 +142,41 @@ add_action('init', function() {
 		'taxonomies' => [ 'category' ],
 		'menu_icon' => 'dashicons-megaphone',
 	];
-
 	register_post_type( 'news', $args );
 });
+
+//Work Taxononomy
+function register_work_taxonomy() {
+
+	/**
+	 * Taxonomy: Project Types.
+	 */
+
+	$labels = [
+		"name"          => __( "Work Services", "carimus" ),
+		"singular_name" => __( "Work Service", "carimus" ),
+	];
+
+	$args = [
+		"label"                 => __( "Work Services", "carimus" ),
+		"labels"                => $labels,
+		"public"                => true,
+		"publicly_queryable"    => true,
+		"hierarchical"          => true,
+		"show_ui"               => true,
+		"show_in_menu"          => true,
+		"show_in_nav_menus"     => true,
+		"query_var"             => true,
+		"show_admin_column"     => true,
+		"show_in_rest"          => true,
+		'supports' => [ 'title', 'editor', 'thumbnail', 'excerpt' ],
+		"rest_base"             => "work_service",
+		"rest_controller_class" => "WP_REST_Terms_Controller",
+		"show_in_quick_edit"    => true,
+		'show_in_graphql' => true,
+		'graphql_single_name' => 'workService',
+		'graphql_plural_name' => 'workServices',
+	];
+	register_taxonomy( "work_services", [ "work" ], $args );
+}
+add_action( 'init', 'register_work_taxonomy' );
