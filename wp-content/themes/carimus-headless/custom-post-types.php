@@ -137,7 +137,7 @@ add_action('init', function() {
 		'description' => '',
 		'public' => true,
 		'show_in_graphql' => true,
-		'graphql_single_name' => 'news_s',
+		'graphql_single_name' => 'newsS',
 		'graphql_plural_name' => 'news',
 		'supports' => [ 'title', 'editor', 'thumbnail', 'excerpt' ],
 		'taxonomies' => [ 'category' ],
