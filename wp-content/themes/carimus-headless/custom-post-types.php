@@ -79,6 +79,7 @@ function register_crew_post_type() {
 
 	register_post_type( "crew", $args );
 }
+add_action( 'init', 'register_crew_post_type' );
 
 /**
  * Post Type: Crew.
