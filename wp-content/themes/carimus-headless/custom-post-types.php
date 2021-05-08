@@ -114,7 +114,7 @@ function register_work_post_type() {
 		"hierarchical" => false,
 		"menu_icon" => "dashicons-hammer",
 		"query_var" => true,
-		"supports" => [ "title", "thumbnail" ],
+		'supports' => [ 'title', 'editor', 'thumbnail', 'excerpt' ],
 		'show_in_graphql' => true,
 		'graphql_single_name' => 'work',
 		'graphql_plural_name' => 'works',
