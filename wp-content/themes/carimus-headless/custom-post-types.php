@@ -144,6 +144,9 @@ add_action('init', function() {
 		'menu_icon' => 'dashicons-megaphone',
 	];
 	register_post_type( 'news', $args );
+
+	add_post_type_support( 'news', 'author' ); 
+
 });
 
 //Work Taxononomy
