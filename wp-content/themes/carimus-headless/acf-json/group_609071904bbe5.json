@@ -159,6 +159,26 @@
                             },
                             "show_in_graphql": 1,
                             "return_format": ""
+                        },
+                        {
+                            "key": "field_609890bde806d",
+                            "label": "Add Spacer Below",
+                            "name": "add_spacer_below",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
                         }
                     ],
                     "min": "",
@@ -286,6 +306,26 @@
                             },
                             "show_in_graphql": 1,
                             "return_format": "array"
+                        },
+                        {
+                            "key": "field_609890dee806e",
+                            "label": "Add Spacer Below",
+                            "name": "add_spacer_below",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
                         }
                     ],
                     "min": "",
@@ -960,5 +1000,5 @@
     "graphql_field_name": "pageSections",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1620394972
+    "modified": 1620611418
 }
