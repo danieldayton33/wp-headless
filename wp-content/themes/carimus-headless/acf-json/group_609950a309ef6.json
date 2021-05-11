@@ -1,34 +1,11 @@
 {
-    "key": "group_60885011b9345",
-    "title": "General Settings",
+    "key": "group_609950a309ef6",
+    "title": "Contact Page Fields",
     "fields": [
         {
-            "key": "field_608851d516759",
-            "label": "Home Page",
-            "name": "home_page",
-            "type": "post_object",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "show_in_graphql": 1,
-            "post_type": [
-                "page"
-            ],
-            "taxonomy": "",
-            "allow_null": 0,
-            "multiple": 0,
-            "return_format": "object",
-            "ui": 1
-        },
-        {
-            "key": "field_609509140cd64",
-            "label": "About Links",
-            "name": "about_links",
+            "key": "field_6099501293b24",
+            "label": "Contact Form Destinations",
+            "name": "contact_form_destinations",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -41,14 +18,14 @@
             "show_in_graphql": 1,
             "collapsed": "",
             "min": 0,
-            "max": 4,
-            "layout": "row",
-            "button_label": "Add Link",
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_609509710cd65",
-                    "label": "Link TItle",
-                    "name": "link_title",
+                    "key": "field_6099503893b25",
+                    "label": "Title",
+                    "name": "title",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -66,10 +43,10 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_6095097edca9c",
-                    "label": "Link Summary",
-                    "name": "link_summary",
-                    "type": "textarea",
+                    "key": "field_6099504393b26",
+                    "label": "Sumary",
+                    "name": "sumary",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -81,15 +58,35 @@
                     "show_in_graphql": 1,
                     "default_value": "",
                     "placeholder": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "new_lines": ""
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 },
                 {
-                    "key": "field_60950989dca9d",
-                    "label": "Link",
-                    "name": "link",
-                    "type": "link",
+                    "key": "field_6099504b93b27",
+                    "label": "Button Text",
+                    "name": "button_text",
+                    "type": "text",
+                    "instructions": "Defaults to Get Started",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6099505593b28",
+                    "label": "Email",
+                    "name": "email",
+                    "type": "email",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -99,7 +96,10 @@
                         "id": ""
                     },
                     "show_in_graphql": 1,
-                    "return_format": "array"
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
                 }
             ]
         }
@@ -107,9 +107,9 @@
     "location": [
         [
             {
-                "param": "options_page",
+                "param": "page",
                 "operator": "==",
-                "value": "theme-settings"
+                "value": "3984"
             }
         ]
     ],
@@ -122,8 +122,8 @@
     "active": true,
     "description": "",
     "show_in_graphql": 1,
-    "graphql_field_name": "generalSettings",
+    "graphql_field_name": "contactPageFields",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1620660444
+    "modified": 1620660499
 }
