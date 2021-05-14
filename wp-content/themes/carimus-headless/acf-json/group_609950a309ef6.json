@@ -100,6 +100,26 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": ""
+                },
+                {
+                    "key": "field_609d75e7c371d",
+                    "label": "Pipedrive Deal",
+                    "name": "pipedrive_deal",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
                 }
             ]
         }
@@ -125,5 +145,5 @@
     "graphql_field_name": "contactPageFields",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1620660499
+    "modified": 1620932094
 }
