@@ -150,6 +150,26 @@
                             "mime_types": ""
                         },
                         {
+                            "key": "field_60cce341066d4",
+                            "label": "Green Line Me",
+                            "name": "green_line_me",
+                            "type": "true_false",
+                            "instructions": "This applies pretty much only to first image row on Launchpad page. Adds a thin green line to bottom of image.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
                             "key": "field_6091091fe1dc1",
                             "label": "Content",
                             "name": "content",
@@ -1322,5 +1342,5 @@
     "graphql_field_name": "pageSections",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1621084697
+    "modified": 1624040352
 }
