@@ -21,7 +21,7 @@
         "wpackagist-plugin/wordpress-seo":"*",
         "wpackagist-plugin/wp-mail-smtp":"*",
         "wpackagist-plugin/wp-graphql":"*",
-        "wp-graphql/wp-graphql-acf":"^0.5.1"
+        "wp-graphql/wp-graphql-acf":"*"
     },
     "extra": {
         "installer-paths": {
