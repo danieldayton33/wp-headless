@@ -224,6 +224,26 @@
                             "ui": 0,
                             "ui_on_text": "",
                             "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_60d9f3a86a85b",
+                            "label": "Alternative Button",
+                            "name": "alternative_button",
+                            "type": "true_false",
+                            "instructions": "Toggle to make the button type secondary (for sections with blue bg)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
                         }
                     ],
                     "min": "",
@@ -378,6 +398,26 @@
                             "name": "add_spacer_below",
                             "type": "true_false",
                             "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_60d9f3d36a85c",
+                            "label": "Alternative Button",
+                            "name": "alternative_button",
+                            "type": "true_false",
+                            "instructions": "Toggle to make the button type secondary (for sections with blue bg)",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1412,7 +1452,5 @@
     "description": "",
     "show_in_graphql": 1,
     "graphql_field_name": "pageSections",
-    "map_graphql_types_from_location_rules": 0,
-    "graphql_types": "",
-    "modified": 1624540475
+    "modified": 1624896496
 }
