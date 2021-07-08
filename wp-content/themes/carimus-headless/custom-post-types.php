@@ -140,6 +140,7 @@ add_action(
 			'labels'              => $labels,
 			'description'         => '',
 			'public'              => true,
+			'show_in_rest'        => true,
 			'show_in_graphql'     => true,
 			'graphql_single_name' => 'newsS',
 			'graphql_plural_name' => 'news',
