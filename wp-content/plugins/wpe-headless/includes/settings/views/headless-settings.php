@@ -13,6 +13,25 @@
 		</svg>
 		<h1><?php esc_html_e( 'Headless by WP&nbsp;Engine', 'wpe-headless' ); ?></h1>
 	</header>
+	<?php
+	/**
+	 * Since we are just checking for the existence of the "new_activation" query param,
+	 * and not using the value, there is no real need to verify the nonce.
+	 */
+	if (
+			! empty( $_GET['new_activation'] ) && // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+			! get_option( 'permalink_structure' )
+		) :
+		?>
+				<div class="wp-header-end">
+					<div class="notice notice-warning is-dismissible" style="margin: 16px;">
+						<p>
+						<?php esc_html_e( 'Permalinks are not currently configured. Choose any setting to make your headless development easier.', 'wpe-headless' ); ?><br />
+							<a href="/wp-admin/options-permalink.php"><?php esc_html_e( 'Go to Permalinks Settings', 'wpe-headless' ); ?></a>
+						</p>
+					</div>
+				</div>
+		<?php endif; ?>
 
 	<h2 class="main"><?php esc_html_e( 'Headless Settings', 'wpe-headless' ); ?></h2>
 
@@ -41,22 +60,27 @@
 							<p class="error-message"></p>
 						<?php endif; ?>
 					</section>
+					<?php if ( ! get_option( 'permalink_structure' ) ) : ?>
+					<section>
+						<h4><?php esc_html_e( 'Enable Permalinks', 'wpe-headless' ); ?></h4>
+						<p><?php esc_html_e( 'Headless is easier with pretty permalinks! If you are unsure of which option to choose, go with "Post Name".', 'wpe-headless' ); ?></p>
+						<p><a href="/wp-admin/options-permalink.php"><?php esc_html_e( 'Go to Settings', 'wpe-headless' ); ?></a></p>
+					</section>
+					<?php endif; ?>
 					<section>
 						<h4><?php esc_html_e( 'Create Your Headless App', 'wpe-headless' ); ?></h4>
-						<p><a href="https://github.com/wpengine/headless-framework/#readme" target="_blank" rel="noopener noreferrer">Follow our setup guide</a>.</p>
+						<p><a href="https://github.com/wpengine/faustjs/#readme" target="_blank" rel="noopener noreferrer">Follow our setup guide</a>.</p>
 					</section>
 				</div>
 				<div class="box docs">
 					<h3>Headless Documentation</h3>
 					<section>
 						<ul>
-							<li><a href="https://github.com/wpengine/headless-framework/#wordpress-headless-framework-previewalpha" target="_blank" rel="noopener noreferrer">Getting started</a></li>
-							<li><a href="https://github.com/wpengine/headless-framework/blob/main/packages/headless/src/provider/HeadlessProvider.tsx" target="_blank" rel="noopener noreferrer">HeadlessProvider component</a></li>
-							<li><a href="https://github.com/wpengine/headless-framework/blob/main/packages/headless/src/components/TemplateLoader.tsx" target="_blank" rel="noopener noreferrer">TemplateLoader component</a></li>
-							<li><a href="https://github.com/wpengine/headless-framework/blob/main/packages/headless/src/components/menu/Menu.tsx" target="_blank" rel="noopener noreferrer">Menu component</a></li>
-							<li><a href="https://github.com/wpengine/headless-framework/blob/main/docs/previews/README.md" target="_blank" rel="noopener noreferrer">Post previews</a></li>
+							<li><a href="https://github.com/wpengine/faustjs/#headless-wordpress-framework" target="_blank" rel="noopener noreferrer">Getting started</a></li>
+							<li><a href="https://github.com/wpengine/faustjs/blob/main/packages/next/src/HeadlessProvider.tsx" target="_blank" rel="noopener noreferrer">HeadlessProvider component</a></li>
+							<li><a href="https://github.com/wpengine/faustjs/blob/main/docs/previews/README.md" target="_blank" rel="noopener noreferrer">Post previews</a></li>
 						</ul>
-						<p><a class="button-primary" href="https://github.com/wpengine/headless-framework/" target="_blank" rel="noopener noreferrer">Headless on GitHub</a></p>
+						<p><a class="button-primary" href="https://github.com/wpengine/faustjs/" target="_blank" rel="noopener noreferrer">Headless on GitHub</a></p>
 					</section>
 				</div>
 			</div>
