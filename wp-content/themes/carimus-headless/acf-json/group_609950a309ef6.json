@@ -43,31 +43,11 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_6099504393b26",
-                    "label": "Sumary",
-                    "name": "sumary",
+                    "key": "field_6172cfe5753ef",
+                    "label": "Plural Title",
+                    "name": "plural_title",
                     "type": "text",
                     "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "show_in_graphql": 1,
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_6099504b93b27",
-                    "label": "Button Text",
-                    "name": "button_text",
-                    "type": "text",
-                    "instructions": "Defaults to Get Started",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -129,7 +109,7 @@
             {
                 "param": "page",
                 "operator": "==",
-                "value": "3984"
+                "value": "3959"
             }
         ]
     ],
@@ -145,5 +125,5 @@
     "graphql_field_name": "contactPageFields",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1620932094
+    "modified": 1634914306
 }
