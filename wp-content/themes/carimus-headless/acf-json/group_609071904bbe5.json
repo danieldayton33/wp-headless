@@ -760,6 +760,26 @@
                             "maxlength": ""
                         },
                         {
+                            "key": "field_6172b79c13ea0",
+                            "label": "Section Summary",
+                            "name": "section_summary",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        },
+                        {
                             "key": "field_609498b717505",
                             "label": "Background Color",
                             "name": "background_color",
@@ -1452,5 +1472,7 @@
     "description": "",
     "show_in_graphql": 1,
     "graphql_field_name": "pageSections",
-    "modified": 1624896496
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1634908085
 }
