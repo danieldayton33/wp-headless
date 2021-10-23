@@ -1172,42 +1172,6 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_60910aade1dc6",
-                            "label": "Background Color",
-                            "name": "background_color",
-                            "type": "color_picker",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "show_in_graphql": 1,
-                            "default_value": ""
-                        },
-                        {
-                            "key": "field_60910d9b27028",
-                            "label": "Dark Background",
-                            "name": "text_light",
-                            "type": "true_false",
-                            "instructions": "Toggle to make the font white for the section",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "show_in_graphql": 1,
-                            "message": "",
-                            "default_value": 0,
-                            "ui": 0,
-                            "ui_on_text": "",
-                            "ui_off_text": ""
-                        },
-                        {
                             "key": "field_60910ad7e1dc7",
                             "label": "Content",
                             "name": "content",
@@ -1226,6 +1190,42 @@
                             "toolbar": "full",
                             "media_upload": 1,
                             "delay": 0
+                        },
+                        {
+                            "key": "field_61742832cb724",
+                            "label": "Link",
+                            "name": "link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_61742809cb723",
+                            "label": "Background Image",
+                            "name": "background_image",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         },
                         {
                             "key": "field_60910ae9e1dc8",
@@ -1648,5 +1648,5 @@
     "graphql_field_name": "pageSections",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1635002234
+    "modified": 1635002441
 }
