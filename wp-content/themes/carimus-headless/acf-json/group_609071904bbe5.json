@@ -1486,7 +1486,7 @@
                 "layout_61748e98710ae": {
                     "key": "layout_61748e98710ae",
                     "name": "CrewCards",
-                    "label": "CrewCards",
+                    "label": "Crew Cards",
                     "display": "row",
                     "sub_fields": [
                         {
@@ -1530,6 +1530,22 @@
                             "maxlength": ""
                         },
                         {
+                            "key": "field_6174ad8545fe7",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": ""
+                        },
+                        {
                             "key": "field_61748eb3710b1",
                             "label": "Link",
                             "name": "link",
@@ -1544,6 +1560,26 @@
                             },
                             "show_in_graphql": 1,
                             "return_format": "array"
+                        },
+                        {
+                            "key": "field_6174adafa6340",
+                            "label": "Text Light",
+                            "name": "text_light",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
                         }
                     ],
                     "min": "",
@@ -1735,5 +1771,5 @@
     "graphql_field_name": "pageSections",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1635028877
+    "modified": 1635036606
 }
