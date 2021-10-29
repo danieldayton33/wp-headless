@@ -162,7 +162,7 @@
             "placeholder": "",
             "maxlength": "",
             "rows": "",
-            "new_lines": "br"
+            "new_lines": ""
         },
         {
             "key": "field_609061d2663f4",
@@ -224,5 +224,5 @@
     "graphql_field_name": "pageFields",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1635525322
+    "modified": 1635526032
 }
